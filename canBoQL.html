@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thêm thông tin người quản lý thiết bị</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <div class="container mt-5">
+    <h1 class="text-center">Thêm thông tin người quản lý thiết bị</h1>
+    <div class="row mt-4">
+      <div class="col-md-6 offset-md-3">
+        <form>
+          <div class="form-group">
+            <label for="fullName">Họ và tên: </label>
+            <input type="text" class="form-control" id="fullName" required>
+          </div>
+          <div class="form-group">
+            <label for="gioiTinh">Giới Tính</label>
+            <div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="gioiTinh" id="nam"
+                    value="nam" class="form-check-input" checked>
+                    <label for="nam"class="form-check-label">Nam</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" name="gioiTinh" id="nu"
+                    value="nu" class="form-check-input">
+                    <label for="nu"class="form-check-label">Nữ</label>
+                </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+                <div class="input-group">
+                    <input type="email" name="email" class="form-control" placeholder="Mã số nhân viên_tên" id="email" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@cntt.com</span>
+                </div>
+          </div>
+          <div class="form-group">
+            <label for="idNumber">Số căn cước:</label>
+            <input type="text" class="form-control" id="idNumber" pattern="[0-9]{12}" placeholder="Căn cước công dân mới 12 số">
+          </div>
+          <div class="form-group">
+            <label for="phone">Số điện thoại:</label>
+            <input type="text" class="form-control" id="phone" pattern="[0-9]{10}" placeholder="0123-456-789">
+          </div>
+          <div class="form-group">
+            <label for="department">Phòng ban:</label>
+            <select class="form-control" id="department" required>
+                <option value="">Chọn phòng ban</option>
+                <option value="Tổng hợp">Tổng hợp</option>
+                <option value="Kế toán">Kế toán</option>
+                <option value="Nhân sự">Nhân sự</option>
+                <option value="Kỹ thuật">Kỹ thuật</option>
+              </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Thêm thông tin</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
