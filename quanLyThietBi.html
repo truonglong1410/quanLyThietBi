@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý thiết bị</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <script scr="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container mt-5">
+        <h1 class="text-center">Quản lý thiết bị</h1>
+        <div class="row mt-4 justify-content-center align-items-center">
+          <div class="col-md-4">
+            <h2 class="text-center">Thêm thiết bị mới</h2>
+            <form>
+              <div class="form-group">
+                    <label for="deviceType">Loại thiết bị:</label>
+                    <select class="form-control" id="deviceType">
+                      <option value="chair">Bàn ghế</option>
+                      <option value="screen">Màn hình</option>
+                      <option value="laptop">Laptop</option>
+                      <option value="airConditional">Máy điều hòa</option>
+                    </select>
+              </div>
+              <div class="form-group">
+                <label for="deviceName">Tên thiết bị:</label>
+                <input type="text" class="form-control" id="deviceName">
+              </div>
+              <div class="form-group">
+                <label for="quantity">Số lượng:</label>
+                <input type="text" class="form-control" id="quantity">
+              </div>
+              <div class="form-group">
+                <label for="dayReception">Ngày tiếp nhận:</label>
+                <input type="date" class="form-control" id="dayReception">
+              </div>
+              <div class="form-group">
+                <label for="warrantyPeriod">Thời gian bảo hành:</label>
+                <div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="warrantyPeriod" id="6m"
+                        value="6m" class="form-check-input" checked>
+                        <label for="6m" class="form-check-label">6 Tháng</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="warrantyPeriod" id="12m"
+                        value="12m" class="form-check-input">
+                        <label for="12m" class="form-check-label">12 Tháng</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="warrantyPeriod" id="24m"
+                        value="24m" class="form-check-input">
+                        <label for="24m" class="form-check-label">24 Tháng</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input type="radio" name="warrantyPeriod" id="36m"
+                        value="36m" class="form-check-input">
+                        <label for="36m" class="form-check-label">36 Tháng</label>
+                    </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Thêm</button>
+            </form>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
