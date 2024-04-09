@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLTB_UPDATE", "QLTB_UPDATE\QLTB_UPDATE.csproj", "{7DE6A6AD-3443-4FA5-B1F1-6F9EC1F704E7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7DE6A6AD-3443-4FA5-B1F1-6F9EC1F704E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DE6A6AD-3443-4FA5-B1F1-6F9EC1F704E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DE6A6AD-3443-4FA5-B1F1-6F9EC1F704E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DE6A6AD-3443-4FA5-B1F1-6F9EC1F704E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {77B713EA-9E87-437D-A621-1343282BA433}
+	EndGlobalSection
+EndGlobal

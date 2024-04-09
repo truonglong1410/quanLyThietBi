@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+        }
+        body{
+            background-image: url(lo1.png);
+            background-size: cover; /* Đảm bảo hình nền sẽ bao phủ toàn bộ phần diện tích của trang */
+            background-position: center; /* Hiển thị hình nền ở giữa trang */
+            background-repeat: no-repeat; /* Không lặp lại hình nền */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6">
+                <!-- Login Form -->
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="text-center mb-4">Login to TECH</h2>
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                        </form>
+                        <a href="quenMatKhau.html" class="forgot-password">Forgot password?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

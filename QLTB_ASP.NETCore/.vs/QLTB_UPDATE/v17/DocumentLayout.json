@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Tr\u01B0\u01A1ng Phi Long\\Website qu\u1EA3n tr\u1ECB\\QLTB_UPDATE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE6A6AD-3443-4FA5-B1F1-6F9EC1F704E7}|QLTB_UPDATE\\QLTB_UPDATE.csproj|d:\\tr\u01B0\u01A1ng phi long\\website qu\u1EA3n tr\u1ECB\\qltb_update\\qltb_update\\views\\danhsachcanbo\\dscanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7DE6A6AD-3443-4FA5-B1F1-6F9EC1F704E7}|QLTB_UPDATE\\QLTB_UPDATE.csproj|solutionrelative:qltb_update\\views\\danhsachcanbo\\dscanbo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DE6A6AD-3443-4FA5-B1F1-6F9EC1F704E7}|QLTB_UPDATE\\QLTB_UPDATE.csproj|d:\\tr\u01B0\u01A1ng phi long\\website qu\u1EA3n tr\u1ECB\\qltb_update\\qltb_update\\views\\suachua\\suachua.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7DE6A6AD-3443-4FA5-B1F1-6F9EC1F704E7}|QLTB_UPDATE\\QLTB_UPDATE.csproj|solutionrelative:qltb_update\\views\\suachua\\suachua.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SuaChua.cshtml",
+              "DocumentMoniker": "D:\\Tr\u01B0\u01A1ng Phi Long\\Website qu\u1EA3n tr\u1ECB\\QLTB_UPDATE\\QLTB_UPDATE\\Views\\SuaChua\\SuaChua.cshtml",
+              "RelativeDocumentMoniker": "QLTB_UPDATE\\Views\\SuaChua\\SuaChua.cshtml",
+              "ToolTip": "D:\\Tr\u01B0\u01A1ng Phi Long\\Website qu\u1EA3n tr\u1ECB\\QLTB_UPDATE\\QLTB_UPDATE\\Views\\SuaChua\\SuaChua.cshtml",
+              "RelativeToolTip": "QLTB_UPDATE\\Views\\SuaChua\\SuaChua.cshtml",
+              "ViewState": "AQIAAMYAAAAAAAAAAAAkwNQAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T08:51:50.213Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DSCanBo.cshtml",
+              "DocumentMoniker": "D:\\Tr\u01B0\u01A1ng Phi Long\\Website qu\u1EA3n tr\u1ECB\\QLTB_UPDATE\\QLTB_UPDATE\\Views\\DanhSachCanBo\\DSCanBo.cshtml",
+              "RelativeDocumentMoniker": "QLTB_UPDATE\\Views\\DanhSachCanBo\\DSCanBo.cshtml",
+              "ToolTip": "D:\\Tr\u01B0\u01A1ng Phi Long\\Website qu\u1EA3n tr\u1ECB\\QLTB_UPDATE\\QLTB_UPDATE\\Views\\DanhSachCanBo\\DSCanBo.cshtml",
+              "RelativeToolTip": "QLTB_UPDATE\\Views\\DanhSachCanBo\\DSCanBo.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAE4AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T08:40:35.426Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

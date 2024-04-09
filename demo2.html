@@ -8,6 +8,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/css/adminlte.min.css">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .main-footer {
+      flex-shrink: 0;
+      background-color: #ddeeff;
+      width: 100%;
+      height: 40px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      font-size: small;
+    }
+  </style>
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -35,7 +47,7 @@
               <i class="fas fa-user mr-2"></i> Hồ sơ
             </a>
             <div class="dropdown-divider"></div>
-            <a href="#" class="dropdown-item">
+            <a href="dangNhap.html" class="dropdown-item">
               <i class="fas fa-sign-out-alt mr-2"></i> Đăng xuất
             </a>
           </div>
@@ -45,7 +57,7 @@
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4 position-fixed">
       <!-- Brand Logo -->
       <a href="#" class="brand-link">
         <img src="lo1.png" alt="Logo" style="height: 30px;">
@@ -68,15 +80,15 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="canBoQL copy.html" class="nav-link active">
+                  <a href="canBoQL.html" class="nav-link active">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Thêm người dùng</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./index2.html" class="nav-link">
+                  <a href="danhSachPhongBan.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Người quản lý thiết bị</p>
+                    <p>Danh sách phòng ban</p>
                   </a>
                 </li>
               </ul>
@@ -90,13 +102,13 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./index.html" class="nav-link active">
+                  <a href="quanLyThietBi.html" class="nav-link active">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Thêm thiết bị</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="./index2.html" class="nav-link">
+                  <a href="dsThietBi.html" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Danh sách thiết bị</p>
                   </a>
@@ -104,10 +116,18 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="suachua.html" class="nav-link">
                 <i class="nav-icon fas fa-cogs"></i>
                 <p>
                   sửa chữa
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="canBoQLThietBi.html" class="nav-link">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                  Đăng ký sử dụng<br>thiết bị
                 </p>
               </a>
             </li>
@@ -216,12 +236,11 @@
     <!-- Main Footer -->
     <footer class="main-footer">
       <!-- To the right -->
-      <div class="float-right d-none d-sm-inline">
-        hotline: 0933-491-336 <br>
+      <div class="float-left d-none d-sm-inline rounded-top">
+        Hotline: 0933-491-336 --
         Email: longtrng71@gmail.com
+        <strong>Tech &copy; 2024 <a href="demo2.html">Trang chủ</a>.</strong>
       </div>
-      <!-- Default to the left -->
-      <strong>Tech &copy; 2024 <a href="demo2.html">Trang chủ</a>.</strong>
     </footer>
   </div>
   <!-- ./wrapper -->
@@ -229,18 +248,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/admin-lte/3.1.0/js/adminlte.min.js"></script>
-  <script>
-    window.onscroll = function () { scrollFunction() };
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("mySidebar").style.top = "50px";
-      } else {
-        document.getElementById("mySidebar").style.top = "0";
-      }
-    }
-
-  </script>
 </body>
 
 </html>

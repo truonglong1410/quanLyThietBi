@@ -1,0 +1,246 @@
+﻿@{
+    ViewBag.Title = "SuaChua";
+}
+
+<style>
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .content-wrapper {
+        flex: 1;
+    }
+
+    .main-footer {
+        flex-shrink: 0;
+        background-color: #ddeeff;
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        font-size: small;
+    }
+</style>
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Danh sách bảo hành sửa chữa thiết bị</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Sửa chữa</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <div class="container wrapper mb-5">
+        <form id="userForm">
+            <div class="form-check-inline ">
+                <div class="form-group mx-2">
+                    <label for="deviceName">Tên thiết bị:</label>
+                    <input type="text" class="form-control" id="deviceName" required>
+                </div>
+                <div class="form-group mx-2">
+                    <label for="deviceType" class="mx-2">Loại thiết bị:</label>
+                    <select class="form-control" id="deviceType">
+                        <option value="Bàn ghế">-Khác-</option>
+                        <option value="Bàn ghế">Bàn ghế</option>
+                        <option value="Màn hình">Màn hình</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Máy điều hòa">Máy điều hòa</option>
+                    </select>
+                </div>
+                <div class="form-group mx-2">
+                    <label for="baoHanh">Tình trạng bảo hành:</label>
+                    <select class="form-control" id="baoHanh">
+                        <option value="Còn bảo hành">Còn bảo hành</option>
+                        <option value="Hết bảo hành">Hết bảo hành</option>
+                    </select>
+                </div>
+                <div class="form-group mx-2">
+                    <label for="dateSend">Ngày gửi bảo hành:</label>
+                    <input type="date" class="form-control" id="dateSend">
+                </div>
+                <div class="form-group">
+                    <label for="datePicker">Ngày dự kiến sửa xong:</label>
+                    <input type="date" class="form-control" id="datePicker">
+                </div>
+            </div>
+            <div class="form-check-inline">
+                <div class="form-group">
+                    <label for="searchDeviceName">Tìm kiếm theo tên thiết bị:</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="searchDeviceName" placeholder="Nhập tên thiết bị">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="searchButton">Tìm kiếm</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group ml-5">
+                    <label for="filterDeviceType">Lọc theo loại thiết bị:</label>
+                    <select class="form-control" id="filterDeviceType">
+                        <option value="all">Tất cả</option>
+                        <option value="Bàn ghế">Bàn ghế</option>
+                        <option value="Màn hình">Màn hình</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Máy điều hòa">Máy điều hòa</option>
+                        <!-- Thêm các loại thiết bị khác nếu cần -->
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="btn btn-primary">Đăng ký</button>
+            </div>
+        </form>
+
+        <table class="table table-bordered mt-2">
+            <thead>
+                <tr>
+                    <th scope="col">Tên thiết bị</th>
+                    <th scope="col">Loại thiết bị</th>
+                    <th scope="col">Tình trạng bảo hành</th>
+                    <th scope="col">Ngày gửi</th>
+                    <th scope="col">Ngày dự kiến</th>
+                    <th scope="col">Sửa,Xóa,In</th>
+                </tr>
+            </thead>
+            <tbody id="userList">
+                <!-- Dữ liệu người dùng sẽ được thêm vào đây -->
+                <tr>
+                    <td>Laptop Dell</td>
+                    <td>Laptop</td>
+                    <td>Còn bảo hành</td>
+                    <td>2024-03-03</td>
+                    <td>2024-04-03</td>
+                    <td class="actions">
+                        <i class="fas fa-edit edit-btn"></i>
+                        <i class="fas fa-trash-alt delete-btn"></i>
+                        <i class="fas fa-print print-btn"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Màn hình Samsung</td>
+                    <td>Màn hình</td>
+                    <td>Còn bảo hành</td>
+                    <td>2024-03-03</td>
+                    <td>2024-04-03</td>
+                    <td class="actions">
+                        <i class="fas fa-edit edit-btn"></i>
+                        <i class="fas fa-trash-alt delete-btn"></i>
+                        <i class="fas fa-print print-btn"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Laptop Asus </td>
+                    <td>Laptop</td>
+                    <td>Còn bảo hành</td>
+                    <td>2024-03-03</td>
+                    <td>2024-04-03</td>
+                    <td class="actions">
+                        <i class="fas fa-edit edit-btn"></i>
+                        <i class="fas fa-trash-alt delete-btn"></i>
+                        <i class="fas fa-print print-btn"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script>
+    document.getElementById('userForm').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var deviceName = document.getElementById('deviceName').value;
+        var deviceType = document.getElementById('deviceType').value;
+        var baoHanh = document.getElementById('baoHanh').value;
+        var dateSend = document.getElementById('dateSend').value;
+        var datePicker = document.getElementById('datePicker').value;
+
+        // Tạo một hàng mới trong bảng và thêm thông tin người dùng
+        var newRow = document.createElement('tr');
+        newRow.innerHTML = `
+                      <td>${deviceName}</td>
+                      <td>${deviceType}</td>
+                      <td>${baoHanh}</td>
+                      <td>${dateSend}</td>
+                      <td>${datePicker}</td>
+                      <td class="actions">
+                        <i class="fas fa-edit edit-btn"></i>
+                        <i class="fas fa-trash-alt delete-btn"></i>
+                        <i class="fas fa-print print-btn"></i>
+                      </td>
+
+                      `;
+
+        document.getElementById('userList').appendChild(newRow);
+
+        // Xóa nội dung trong các trường nhập liệu
+        document.getElementById('deviceName').value = '';
+        document.getElementById('deviceType').value = '';
+        document.getElementById('baoHanh').value = '';
+        document.getElementById('dateSend').value = '';
+        document.getElementById('datePicker').value = '';
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var deleteButtons = document.querySelectorAll(".delete-btn");
+        deleteButtons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                var row = this.closest("tr");
+                if (confirm("Bạn có chắc chắn muốn xóa thông tin bảo hành này không?")) {
+                    row.remove();
+                }
+            });
+        });
+    });
+    document.getElementById('searchButton').addEventListener('click', function () {
+        var keyword = document.getElementById('searchDeviceName').value.trim().toLowerCase();
+        var rows = document.getElementById('userList').getElementsByTagName('tr');
+
+        for (var i = 0; i < rows.length; i++) {
+            var deviceName = rows[i].getElementsByTagName('td')[0];
+            if (deviceName) {
+                var textValue = deviceName.textContent || deviceName.innerText;
+                if (textValue.toLowerCase().indexOf(keyword) > -1) {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+        }
+    });
+    document.getElementById('filterDeviceType').addEventListener('change', function () {
+        var selectedType = this.value;
+        var rows = document.getElementById('userList').getElementsByTagName('tr');
+
+        for (var i = 0; i < rows.length; i++) {
+            var deviceType = rows[i].getElementsByTagName('td')[1]; // Cột thứ hai chứa loại thiết bị
+            if (deviceType) {
+                var textValue = deviceType.textContent || deviceType.innerText;
+                if (selectedType === 'all' || textValue === selectedType) {
+                    rows[i].style.display = "";
+                } else {
+                    rows[i].style.display = "none";
+                }
+            }
+        }
+    });
+
+
+</script>
+<!-- /.content-wrapper -->
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->

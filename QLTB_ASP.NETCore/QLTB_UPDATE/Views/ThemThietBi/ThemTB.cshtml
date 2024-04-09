@@ -1,0 +1,120 @@
+﻿@{
+    ViewBag.Title = "ThemTB";
+}
+<style>
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .content-wrapper {
+        flex: 1;
+    }
+
+    .main-footer {
+        flex-shrink: 0;
+        background-color: #ddeeff;
+        width: 100%;
+        height: 40px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        font-size: small;
+    }
+</style>
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h1 class="m-0">Thêm thông tin thiết bị</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="@Url.Action("Index", "Home")">Trang chủ</a></li>
+                        <li class="breadcrumb-item"><a href="#">Thiết bị</a></li>
+                        <li class="breadcrumb-item active">Thêm thiết bị</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+    <!-- Main content -->
+    <div class="container wrapper ">
+        <div class="row mt-4 justify-content-center align-items-center">
+            <div class="col-md-7">
+                <form id="productForm">
+                    <div class="form-group mr-2 ">
+                        <label for="deviceType">Loại thiết bị:</label>
+                        <select class="form-control" id="deviceType">
+                            <option value="Bàn ghế">Bàn ghế</option>
+                            <option value="Màn Hình">Màn hình</option>
+                            <option value="Máy tính">Máy tính</option>
+                            <option value="Máy điều hòa">Máy điều hòa</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="deviceName">Tên thiết bị:</label>
+                        <input type="text" class="form-control" id="deviceName">
+                    </div>
+                    <div class="form-group">
+                        <label for="dayReception">Ngày tiếp nhận:</label>
+                        <input type="date" class="form-control" id="dayReception">
+                    </div>
+                    <div class="form-group">
+                        <label for="warrantyPeriod">Thời gian bảo hành:</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="warrantyPeriod" id="6m" value="6 tháng" class="form-check-input" checked>
+                                <label for="6m" class="form-check-label mr-2">6 Tháng</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="warrantyPeriod" id="12m" value="12 tháng" class="form-check-input">
+                                <label for="12m" class="form-check-label">12 Tháng</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="warrantyPeriod" id="24m" value="24 tháng" class="form-check-input">
+                                <label for="24m" class="form-check-label">24 Tháng</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="warrantyPeriod" id="36m" value="36 tháng" class="form-check-input">
+                                <label for="36m" class="form-check-label">36 Tháng</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input type="radio" name="warrantyPeriod" id="expired" value="Hết bảo hành" class="form-check-input">
+                                <label for="expired" class="form-check-label">Hết bảo hành</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Thêm</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    // Đặt lại form nhập liệu
+    function resetForm() {
+        document.getElementById('deviceName').value = '';
+        document.getElementById('deviceType').value = 'all';
+        document.getElementById('quantity').value = '';
+        document.getElementById('dayReception').value = '';
+        document.getElementById('6m').checked = true;
+    }
+
+
+</script>
+
+<!-- /.content-wrapper -->
+<!-- Control Sidebar -->
+<aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+</aside>
+<!-- /.control-sidebar -->
